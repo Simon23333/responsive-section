@@ -5,11 +5,11 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-  box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  box-sizing: border-box;
   font: normal 100%/1.3 "Noto Sans", sans-serif;
 }
 
@@ -17,87 +17,50 @@ html {
   box-sizing: inherit;
 }
 
-section {
-  background-color: #e5c30a;
-}
-
-.section-body {
-  font-family: "Noto Sans", sans-serif;
-}
-
-.wrapper {
-  padding: 1.3rem;
-  margin: 0 auto;
-  max-width: 45em;
-}
-
 body {
   margin: 0;
 }
 
+.img-flex {
+  width: 100%;
+  display: block;
+}
+
+.section-letter {
+  float: left;
+  width: 50%;
+}
+
+.section-icon {
+  float: right;
+  width: 50%;
+}
+
 section h2 {
   margin: 0;
-  font-size: 1.5rem;
 }
 
 section p {
   margin: 0;
 }
 
-.img-flex {
-  display: block;
-  width: 100%;
-  text-align: center;
+section {
+  background-color: #e5c30a;
+  overflow: hidden;
 }
 
-.section-letter {
-  display: block;
-  width: 100%;
-}
-
-.section-icon {
-  display: block;
-  width: 100%;
-}
-
-@media only screen and (min-width: 20em) {
-
-  html {
-    font: normal 100%/1.3 sans-serif;
-  }
-
-  h2 {
-    font-weight: bold;
-  }
-
-  .section-letter {
-    float: left;
-    width: 50%;
-  }
-
-  .section-icon {
-    float: left;
-    width: 50%;
-  }
-
+.wrapper {
+  margin: 0 auto;
+  max-width: 45em;
+  padding: 1.3rem;
 }
 
 @media only screen and (min-width: 25em) {
 
-  html {
-    font: normal 100%/1.3 sans-serif;
-  }
-
-  .section-letter {
-    float: left;
-    width: 45%;
-  }
-
+  .section-letter,
   .section-icon {
-    float: left;
-    width: 45%;
+    padding: .3rem 1.3rem;
   }
-
 }
 
 @media only screen and (min-width: 38em) {
@@ -107,32 +70,14 @@ section p {
     line-height: 1.4;
   }
 
-  .section-letter {
-    float: left;
-    width: 15%;
-  }
-
+  .section-letter,
   .section-icon {
-    float: right;
-    width: 15%;
+    width: 7em;
   }
 
   .section-body {
-    width: 60%;
-    float: left;
-    text-align: center;
-    margin: 0 1.4rem;
+    width: 25em;
   }
-
-  h2,
-  p {
-    text-align: left;
-  }
-
-  .wrapper {
-    overflow: hidden;
-  }
-
 }
 
 @media only screen and (min-width: 60em) {
@@ -142,6 +87,14 @@ section p {
     line-height: 1.5;
   }
 
+  .section-letter,
+  .section-icon {
+    width: 10em;
+  }
+
+  .section-body {
+    width: 30em;
+  }
 }
 
 @media only screen and (min-width: 90em) {
@@ -149,12 +102,4 @@ section p {
   html {
     font-size: 130%;
   }
-
-  .wrapper {
-    display: inline-block;
-    max-width: 45em;
-    text-align: center;
-    margin-left: 12em;
-  }
-
 }
