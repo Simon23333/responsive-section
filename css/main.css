@@ -61,6 +61,7 @@ section {
   .section-icon {
     padding: .3rem 1.3rem;
   }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -78,6 +79,7 @@ section {
   .section-body {
     width: 25em;
   }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -95,6 +97,7 @@ section {
   .section-body {
     width: 30em;
   }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -102,4 +105,5 @@ section {
   html {
     font-size: 130%;
   }
+
 }
